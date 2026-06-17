@@ -162,5 +162,6 @@ int main() {
         }
     }
     closeSocket(peerSocket);
+    cleanupSockets();
     return 0;
 }

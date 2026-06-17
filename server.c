@@ -105,5 +105,6 @@ int main() {
         }
     }
     closeSocket(serverSocket);
+    cleanupSockets();
     return 0;
 }

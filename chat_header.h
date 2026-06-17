@@ -73,4 +73,10 @@ static inline void initSockets() {
 #endif
 }
 
+static inline void cleanupSockets() {
+#ifdef _WIN32
+    WSACleanup();
+#endif
+}
+
 #endif
